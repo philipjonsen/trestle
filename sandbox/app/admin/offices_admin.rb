@@ -8,7 +8,7 @@ Trestle.resource(:offices) do
     column :country
     column :phone
     column :url do |office|
-      link_to office.url, office.url, target: "_blank"
+      link_to office.url, office.url, target: "_blank", rel: "noopener"
     end
     actions
   end
